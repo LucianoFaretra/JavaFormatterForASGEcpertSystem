@@ -11,7 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Inserire Testo");
+        System.out.println("Inserire Testo:");
+        System.out.print(">:");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         Stream<String> stream = in.lines().limit(1);
 
