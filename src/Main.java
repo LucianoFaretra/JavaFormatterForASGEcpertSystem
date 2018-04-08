@@ -22,7 +22,7 @@ public class Main {
         List<String> strings = Arrays.asList(testo.split(" "));
         String lineDaStampare = new String();
         String testoFinale = new String();
-        testoFinale = testoFinale.concat("(printout t \"********************************************************************************\" crlf);\n");
+        testoFinale = testoFinale.concat("(printout t \"*******************************************************************************\" crlf)\n");
         String ultimaParola = new String();
         for(String s : strings){
             if(lineDaStampare.length() == 0){
@@ -50,7 +50,7 @@ public class Main {
         }
         lineDaStampare = lineDaStampare.concat(" *\" crlf)\n");
         testoFinale = testoFinale.concat(lineDaStampare) ;
-        testoFinale = testoFinale.concat("(printout t \"********************************************************************************\" crlf);\n");
+        testoFinale = testoFinale.concat("(printout t \"*******************************************************************************\" crlf)\n");
         System.out.println(testoFinale);
 
 
