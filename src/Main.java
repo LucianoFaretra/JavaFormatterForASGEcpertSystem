@@ -26,9 +26,9 @@ public class Main {
         String ultimaParola = new String();
         for(String s : strings){
             if(lineDaStampare.length() == 0){
-                lineDaStampare = lineDaStampare.concat("(printout t \"* ");
+                lineDaStampare = lineDaStampare.concat("(printout t \"*");
                 if(ultimaParola.length() > 0){
-                    lineDaStampare = lineDaStampare.concat(ultimaParola);
+                    lineDaStampare = lineDaStampare.concat(" " + ultimaParola);
                 }
             }
             if(s.length()+lineDaStampare.length() < LUNGHEZZA_RIGA){
