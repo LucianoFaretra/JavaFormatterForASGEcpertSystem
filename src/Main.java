@@ -21,11 +21,11 @@ public class Main {
         List<String> strings = Arrays.asList(testo.split(" "));
         String lineDaStampare = new String();
         String testoFinale = new String();
-        testoFinale = testoFinale.concat("printout t \"********************************************************************************\" crlf);\n");
+        testoFinale = testoFinale.concat("(printout t \"********************************************************************************\" crlf);\n");
         String ultimaParola = new String();
         for(String s : strings){
             if(lineDaStampare.length() == 0){
-                lineDaStampare = lineDaStampare.concat("printout t \"* ");
+                lineDaStampare = lineDaStampare.concat("(printout t \"* ");
                 if(ultimaParola.length() > 0){
                     lineDaStampare = lineDaStampare.concat(ultimaParola);
                 }
@@ -38,7 +38,7 @@ public class Main {
                 for(int i = 0; spaziDaAggiungere > i; i++){
                     lineDaStampare = lineDaStampare.concat(" ");
                 }
-                lineDaStampare = lineDaStampare.concat(" *\" crlf);\n");
+                lineDaStampare = lineDaStampare.concat(" *\" crlf)\n");
                 testoFinale = testoFinale.concat(lineDaStampare) ;
                 lineDaStampare = new String();
             }
@@ -47,9 +47,9 @@ public class Main {
         for(int i = 0; spaziDaAggiungere > i; i++){
             lineDaStampare = lineDaStampare.concat(" ");
         }
-        lineDaStampare = lineDaStampare.concat(" *\" crlf);\n");
+        lineDaStampare = lineDaStampare.concat(" *\" crlf)\n");
         testoFinale = testoFinale.concat(lineDaStampare) ;
-        testoFinale = testoFinale.concat("printout t \"********************************************************************************\" crlf);\n");
+        testoFinale = testoFinale.concat("(printout t \"********************************************************************************\" crlf);\n");
         System.out.println(testoFinale);
 
 
